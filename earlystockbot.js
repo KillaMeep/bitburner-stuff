@@ -5,7 +5,9 @@ export async function main(ns) {
     var stockVolPer = 0.05
 
     var moneyKeep = ns.args[0]
-
+    if(moneyKeep === "") {
+        var moneyKeep = 0;
+    }
     var minSharePer = 5
 
     while (true) {
